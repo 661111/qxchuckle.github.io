@@ -25,15 +25,6 @@ function loop() {var startTime = new Date();debugger;if (new Date() - startTime 
   }
   console.log('', devtools);
 }
-toDevtools();</script><script>document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
-    var e = event || window.event || arguments.callee.caller.arguments[0];
-    if (e && (e.keyCode == 123)) {
-      e.keyCode = 0;
-      e.returnValue = false;
-      btf.snackbarShow('哒咩哒咩!居然想扒人家裤子(拽紧)');
-      return (false);
-    }
-}
 $(document).keydown(function(e){
   if( e.ctrlKey  == true && e.keyCode == 83 ){
     console.log('ctrl+s');
